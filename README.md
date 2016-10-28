@@ -14,3 +14,17 @@ Installation script for Zabbix agent (Windows 32/64)
  ⋅ Определение имени хоста для активных проверок.
  
  ⋅ Создание правил файерволла.
+
+# Установка
+
+ Распакуйте архив в папку zabbix_agent. Структура каталогов должна быть такой:
+  
+ zabbix_agent
+ 
+ |_bin
+ 
+ |_conf
+ 
+ В корень положите скрипт.
+ 
+ [Cкачайте Zabbix agent LTS отсюда] (http://www.zabbix.com/download) и распакуйте в ту же папку.
