@@ -1,5 +1,7 @@
 SETLOCAL ENABLEDELAYEDEXPANSION
+REM Determinate your domain postfix local/com/ru
 SET String=%computername%.%userdomain%.local
+REM Determinate Zabbix Server address
 SET Zabbix=192.168.10.31
 SET String
 CALL :LoCase String
@@ -41,7 +43,7 @@ echo ServerActive=%Zabbix% >> .\conf\zabbix_agentd.conf
 echo Hostname=%String% >> .\conf\zabbix_agentd.conf
 echo ListenPort=10050  >> .\conf\zabbix_agentd.conf
 echo LogFile=c:\zabbix_agent\zabbix_agentd.log >> .\conf\zabbix_agentd.conf 
-echo LogFileSize=10 >> .\conf\zabbix_agentd.conf
+echo LogFileSize=5 >> .\conf\zabbix_agentd.conf
 echo tune firewall
 netsh advfirewall firewall add rule name="Zabbix Agent" dir=out protocol=tcp localport=10050 action=allow
 netsh advfirewall firewall add rule name="Zabbix Agent" dir=in protocol=tcp localport=10050 action=allow
