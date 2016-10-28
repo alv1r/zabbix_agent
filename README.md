@@ -28,3 +28,5 @@ Installation script for Zabbix agent (Windows 32/64)
  В корень положите скрипт.
  
  [Cкачайте Zabbix agent LTS отсюда] (http://www.zabbix.com/download) и распакуйте в ту же папку.
+ 
+ Запускать от учетной записи с **административными правами**
