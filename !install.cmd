@@ -44,7 +44,7 @@ echo Hostname=%String% >> .\conf\zabbix_agentd.conf
 echo ListenPort=10050  >> .\conf\zabbix_agentd.conf
 echo LogFile=c:\zabbix_agent\zabbix_agentd.log >> .\conf\zabbix_agentd.conf 
 echo LogFileSize=5 >> .\conf\zabbix_agentd.conf
-echo EnableRemoteCommands=yes >> .\conf\zabbix_agentd.conf
+echo EnableRemoteCommands=1 >> .\conf\zabbix_agentd.conf
 echo tune firewall
 netsh advfirewall firewall add rule name="Zabbix Agent" dir=out protocol=tcp localport=10050 action=allow
 netsh advfirewall firewall add rule name="Zabbix Agent" dir=in protocol=tcp localport=10050 action=allow
