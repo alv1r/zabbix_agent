@@ -28,8 +28,8 @@ Installation script for Zabbix agent (Windows 32/64)
  Cкачайте Zabbix agent LTS [отсюда](https://www.zabbix.com/download_agents)  и распакуйте в ту же папку.
  В теле скрипта нужно указать адрес сервера и и постфикс домена
 
-    SET String=%computername%.%userdomain%.**local** 
-    SET Zabbix=**192.168.10.31**
+    SET String=%computername%.%userdomain%.local 
+    SET Zabbix=192.168.10.31
 (В данном случае local и 192.168.10.31 соответственно) 
  Запускать от учетной записи с **административными правами**
 
