@@ -5,5 +5,4 @@
 *
 
 # ... except for this one.
-!.gitignore
-!.gitkeep
+.gitkeep
