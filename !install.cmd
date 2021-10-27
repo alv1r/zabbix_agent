@@ -12,7 +12,7 @@ SET _computerDomain=%_computerDomain: =%
 SET _fqdn=%COMPUTERNAME%.%_computerDomain%
 rem set zabbix server address 
 SET Zabbix=%1
-echo ing coniguration file
+echo Making configuration file
 echo Server=%Zabbix% >> .\conf\zabbix_agentd.conf
 echo ServerActive=%Zabbix% >> .\conf\zabbix_agentd.conf
 echo Hostname=%_fqdn%  >> .\conf\zabbix_agentd.conf
