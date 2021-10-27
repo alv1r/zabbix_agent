@@ -1,4 +1,5 @@
 
+
 # zabbix_agent
 Installation script for Zabbix agent (Windows 32/64)
 
@@ -12,7 +13,7 @@ Installation script for Zabbix agent (Windows 32/64)
  
  ⋅ Создание конфигурационного файла на основе настроек скрипта
  
- ⋅ Определение имени хоста для активных проверок.
+ ⋅ Определение имени хоста для [активных проверок](https://www.zabbix.com/documentation/current/ru/manual/appendix/items/activepassive).
  
  ⋅ Создание правил файерволла.
 
