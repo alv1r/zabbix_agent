@@ -1,3 +1,4 @@
+
 # zabbix_agent
 Installation script for Zabbix agent (Windows 32/64)
 
@@ -7,7 +8,9 @@ Installation script for Zabbix agent (Windows 32/64)
  
  ⋅ Определение разрядности ОС и установка подходящей версии агента.
  
- ⋅ Создание конфигурационного файла на основе настроек скрипта:
+ ⋅ Получение адреса сервера из строки запуска
+ 
+ ⋅ Создание конфигурационного файла на основе настроек скрипта
  
  ⋅ Определение имени хоста для активных проверок.
  
@@ -15,21 +18,23 @@ Installation script for Zabbix agent (Windows 32/64)
 
 # Установка
 
- Распакуйте архив в папку zabbix_agent. Структура каталогов должна быть такой:
-  
- zabbix_agent
- 
- |_bin
- 
- |_conf
- 
+Распакуйте архив в папку zabbix_agent. 
+Cкачайте Zabbix agent LTS [отсюда](https://www.zabbix.com/download_agents)  и распакуйте в ту же папку.
+Структура каталогов должна быть такой:  
+
+     zabbix_agent
+     
+     |_bin
+     
+     |_conf
+     
+
  В корень положите скрипт.
  
- Cкачайте Zabbix agent LTS [отсюда](https://www.zabbix.com/download_agents)  и распакуйте в ту же папку.
- В теле скрипта нужно указать адрес сервера и и постфикс домена
+  Установка:
 
-    SET String=%computername%.%userdomain%.**local** 
-    SET Zabbix=**192.168.10.31**
-(В данном случае local и 192.168.10.31 соответственно) 
+      !install.cmd zabbix_server
+
+ Где zabbix_server - IP или FQDN адрес вашего сервера Zabbix
  Запускать от учетной записи с **административными правами**
 
