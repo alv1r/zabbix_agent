@@ -37,4 +37,3 @@ Cкачайте Zabbix agent LTS [отсюда](https://www.zabbix.com/download_
 
  Где zabbix_server - IP или FQDN адрес вашего сервера Zabbix
  Запускать от учетной записи с **административными правами**
-
