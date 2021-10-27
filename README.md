@@ -20,7 +20,7 @@ Installation script for Zabbix agent (Windows 32/64)
 # Установка
 
 Распакуйте архив в папку zabbix_agent. 
-Cкачайте Zabbix agent LTS [отсюда](https://www.zabbix.com/download_agents)  и распакуйте в ту же папку.
+Cкачайте Zabbix Agent LTS (нам нужны архивы для обеих разрядностией) [отсюда](https://www.zabbix.com/download_agents)  и распакуйте в ту же папку.
 Структура каталогов должна быть такой:  
 
      zabbix_agent
