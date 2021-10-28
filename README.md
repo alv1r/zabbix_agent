@@ -23,7 +23,7 @@ Cкачайте Zabbix Agent LTS (нам нужны архивы для обеи
 Структура каталогов должна быть такой:  
 
      zabbix_agent
-	    |win32
+	      |win32
      |_bin  |win64
      
      |_conf
