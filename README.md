@@ -1,7 +1,7 @@
 # zabbix_agent
-Installation script for Zabbix agent (Windows 32/64)
+Installation script for Zabbix agent (Windows/Linux (Ubuntu) 32/64)
 
-Скрипт для установки Zabbix агента.
+Скрипты для установки Zabbix агента.
 
 Основыные функции:
  
@@ -16,6 +16,8 @@ Installation script for Zabbix agent (Windows 32/64)
  ⋅ Создание правил файерволла.
 
 # Установка
+
+## Windows
 
 Распакуйте архив в папку zabbix_agent. 
 Cкачайте Zabbix Agent LTS (нам нужны архивы для обеих разрядностией) [отсюда](https://www.zabbix.com/download_agents).
@@ -42,3 +44,8 @@ Cкачайте Zabbix Agent LTS (нам нужны архивы для обеи
 
  Где zabbix_server - IP или FQDN адрес вашего сервера Zabbix
  Запускать от учетной записи с **административными правами**
+
+ ## Linux
+
+В скрипте !install.sh вместо Server=10.11.12.13 всюду укажите IP или FQDN адрес вашего сервера Zabbix
+Запускать от учетной записи с **административными правами**
